@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AURELIS — Maison de Cognac</title>
+
+    <meta
+        name="description"
+        content="AURELIS — премиальный дом коньяка. Crafted without compromise."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body class="age-locked">
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+
+        <div class="preloader-inner">
+
+            <div class="preloader-logo">
+                AURELIS
+            </div>
+
+            <div class="preloader-line">
+                <span></span>
+            </div>
+
+            <div class="preloader-text">
+                MAISON DE COGNAC · SINCE 1898
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- AGE GATE -->
+    <section
+        class="age-gate"
+        id="ageGate"
+    >
+
+        <div class="age-gate-card">
+
+            <div class="age-mark">
+                18+
+            </div>
+
+            <div class="age-brand">
+                AURELIS
+            </div>
+
+            <h1>
+                Вам уже исполнился<br>
+                возраст совершеннолетия?
+            </h1>
+
+            <p>
+                Этот сайт содержит информацию о крепких
+                алкогольных напитках. Пожалуйста, подтвердите,
+                что вы достигли возраста совершеннолетия
+                в соответствии с законодательством вашей страны.
+            </p>
+
+            <div class="age-actions">
+
+                <button
+                    class="btn btn-gold"
+                    id="ageYes"
+                >
+                    Да, мне есть 18
+                    <span>→</span>
+                </button>
+
+                <button
+                    class="btn btn-outline"
+                    id="ageNo"
+                >
+                    Нет
+                </button>
+
+            </div>
+
+            <div class="age-disclaimer">
+                Употребляйте алкоголь ответственно.
+            </div>
+
+        </div>
+
+
+        <div
+            class="age-denied"
+            id="ageDenied"
+        >
+
+            <div class="age-mark">
+                18+
+            </div>
+
+            <h2>
+                Доступ закрыт
+            </h2>
+
+            <p>
+                Посещение сайта AURELIS доступно
+                только совершеннолетним пользователям.
+            </p>
+
+            <a
+                href="https://www.google.com/"
+                class="btn btn-outline"
+            >
+                Покинуть сайт
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCROLL PROGRESS -->
+    <div
+        class="scroll-progress"
+        id="scrollProgress"
+    ></div>
+
+
+    <!-- NAV -->
+    <header
+        class="navbar"
+        id="navbar"
+    >
+
+        <div class="container nav-inner">
+
+            <a
+                href="#hero"
+                class="brand"
+            >
+                <span class="brand-name">
+                    AURELIS
+                </span>
+
+                <span class="brand-subtitle">
+                    MAISON DE COGNAC
+                </span>
+            </a>
+
+
+            <nav
+                class="nav-menu"
+                id="navMenu"
+            >
+
+                <a href="#maison">
+                    Maison
+                </a>
+
+                <a href="#heritage">
+                    Heritage
+                </a>
+
+                <a href="#collection">
+                    Collection
+                </a>
+
+                <a href="#partners">
+                    Partners
+                </a>
+
+                <a href="#journal">
+                    Journal
+                </a>
+
+            </nav>
+
+
+            <div class="nav-right">
+
+                <button
+                    class="cart-button"
+                    id="cartButton"
+                    aria-label="Открыть корзину"
+                >
+
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                    >
+                        <path
+                            d="M4 5h2l2 11h9l2-8H7"
+                            stroke="currentColor"
+                            stroke-width="1.4"
+                        />
+
+                        <circle
+                            cx="10"
+                            cy="20"
+                            r="1"
+                            fill="currentColor"
+                        />
+
+                        <circle
+                            cx="18"
+                            cy="20"
+                            r="1"
+                            fill="currentColor"
+                        />
+                    </svg>
+
+                    <span
+                        class="cart-count"
+                        id="cartCount"
+                    >
+                        0
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Открыть меню"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section
+            class="hero"
+            id="hero"
+        >
+
+            <div class="hero-background"></div>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-grid"></div>
+
+            <div class="container hero-content">
+
+                <div class="hero-kicker reveal-on-load">
+                    EST. 1898 · COGNAC, FRANCE
+                </div>
+
+                <h1 class="hero-title reveal-on-load">
+                    Crafted
+                    <span>without</span>
+                    compromise.
+                </h1>
+
+                <p class="hero-description reveal-on-load">
+                    Дом AURELIS создаёт коньяки для тех,
+                    кто умеет ценить время, редкие eaux-de-vie
+                    и красоту безупречных деталей.
+                </p>
+
+                <div class="hero-buttons reveal-on-load">
+
+                    <a
+                        href="#collection"
+                        class="btn btn-gold"
+                    >
+                        Исследовать коллекцию
+                        <span>→</span>
+                    </a>
+
+                    <a
+                        href="#maison"
+                        class="btn btn-outline"
+                    >
+                        История дома
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-bottom container">
+
+                <div class="hero-scroll">
+                    SCROLL TO DISCOVER
+                    <span></span>
+                </div>
+
+
+                <div class="hero-facts">
+
+                    <div>
+                        <strong>126</strong>
+                        YEARS OF HERITAGE
+                    </div>
+
+                    <div>
+                        <strong>37</strong>
+                        COUNTRIES
+                    </div>
+
+                    <div>
+                        <strong>18</strong>
+                        SIGNATURE AWARDS
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MARQUEE -->
+        <div class="marquee">
+
+    <div class="marquee-track" id="marqueeTrack">
+
+        <div class="marquee-group">
+
+            <span>
+                FINE EAUX-DE-VIE
+            </span>
+
+            <i>✦</i>
+
+            <span>
+                CRAFTED IN COGNAC
+            </span>
+
+            <i>✦</i>
+
+            <span>
+                PRIVATE COLLECTIONS
+            </span>
+
+            <i>✦</i>
+
+            <span>
+                SINCE 1898
+            </span>
+
+            <i>✦</i>
+
+            <span>
+                SLOW CRAFTSMANSHIP
+            </span>
+
+            <i>✦</i>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        <!-- MAISON -->
+        <section
+            class="section intro-section"
+            id="maison"
+        >
+
+            <div class="container intro-grid">
+
+                <div class="intro-left reveal">
+
+                    <div class="section-eyebrow">
+                        THE MAISON
+                    </div>
+
+                    <h2 class="display-heading">
+                        Some things are
+                        made quickly.
+                        <em>We never cared for that.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="intro-right reveal">
+
+                    <p>
+                        AURELIS появился в самом сердце Cognac
+                        в 1898 году. Основатель дома, Étienne Aurelis,
+                        верил, что настоящий характер невозможно
+                        создать в спешке.
+                    </p>
+
+                    <p>
+                        Из поколения в поколение мастера дома
+                        отбирали редкие спирты, исследовали дуб
+                        и совершенствовали собственный метод
+                        выдержки.
+                    </p>
+
+                    <p>
+                        Сегодня AURELIS объединяет французское
+                        ремесло и современную эстетику,
+                        сохраняя главное — уважение ко времени.
+                    </p>
+
+                    <div class="signature">
+                        Étienne Aurelis
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATS -->
+        <section class="stats-section">
+
+    <div class="container stats-grid">
+
+        <div class="stat reveal">
+
+            <div
+                class="stat-value"
+                data-target="1898"
+            >
+                0
+            </div>
+
+            <div class="stat-label">
+                FOUNDATION
+            </div>
+
+        </div>
+
+
+        <div class="stat reveal">
+
+            <div
+                class="stat-value"
+                data-target="37"
+            >
+                0
+            </div>
+
+            <div class="stat-label">
+                COUNTRIES
+            </div>
+
+        </div>
+
+
+        <div class="stat reveal">
+
+            <div
+                class="stat-value"
+                data-target="18"
+            >
+                0
+            </div>
+
+            <div class="stat-label">
+                INTERNATIONAL AWARDS
+            </div>
+
+        </div>
+
+
+        <div class="stat reveal">
+
+            <div
+                class="stat-value"
+                data-target="126"
+            >
+                0
+            </div>
+
+            <div class="stat-label">
+                YEARS OF HERITAGE
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- HERITAGE -->
+        <section
+            class="section heritage-section"
+            id="heritage"
+        >
+
+            <div class="container heritage-grid">
+
+                <div class="heritage-intro reveal">
+
+                    <div class="section-eyebrow">
+                        HERITAGE
+                    </div>
+
+                    <h2 class="display-heading">
+                        Time is our
+                        <em>main ingredient.</em>
+                    </h2>
+
+                    <p class="section-text">
+                        От маленького семейного погреба
+                        до международного luxury-дома —
+                        история AURELIS всегда строилась
+                        вокруг одного принципа: хорошие вещи
+                        требуют времени.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline">
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-year">
+                            1898
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Рождение дома
+                            </h3>
+
+                            <p>
+                                Étienne Aurelis основывает семейный
+                                дом в Cognac и начинает создавать
+                                собственные eaux-de-vie.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-year">
+                            1936
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Первое международное признание
+                            </h3>
+
+                            <p>
+                                AURELIS получает первые награды
+                                на европейских выставках
+                                и начинает работать с частными
+                                коллекционерами.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-year">
+                            1978
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Новое поколение
+                            </h3>
+
+                            <p>
+                                Семья расширяет погреба и вводит
+                                собственный метод многоступенчатой
+                                выдержки.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-year">
+                            2004
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Новый взгляд
+                            </h3>
+
+                            <p>
+                                Дом выходит на новые рынки,
+                                сохраняя производство во Франции
+                                и обновляя визуальный язык бренда.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-year">
+                            2026
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Maison of tomorrow
+                            </h3>
+
+                            <p>
+                                Сегодня AURELIS представлен
+                                в 37 странах и сотрудничает
+                                с luxury hospitality, private clubs
+                                и гастрономическими проектами.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CRAFT -->
+        <section class="section craft-section">
+
+            <div class="container">
+
+                <div class="craft-heading reveal">
+
+                    <div>
+
+                        <div class="section-eyebrow">
+                            OUR CRAFT
+                        </div>
+
+                        <h2 class="display-heading">
+                            Creating
+                            <em>character.</em>
+                        </h2>
+
+                    </div>
+
+                    <p class="section-text">
+                        Каждый выпуск начинается с отбора спиртов,
+                        продолжается долгими годами выдержки
+                        и завершается ручной работой мастера.
+                    </p>
+
+                </div>
+
+
+                <div class="craft-image-wrap reveal">
+
+                    <div class="craft-image"></div>
+
+                    <div class="craft-image-border"></div>
+
+                    <div class="craft-caption">
+
+                        <h3>
+                            La patience<br>
+                            fait le caractère.
+                        </h3>
+
+                        <p>
+                            Терпение создаёт характер.
+                            Принцип, который мастера AURELIS
+                            передают из поколения в поколение.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COLLECTION -->
+        <section
+            class="section collection-section"
+            id="collection"
+        >
+
+            <div class="container">
+
+                <div class="collection-header reveal">
+
+                    <div>
+
+                        <div class="section-eyebrow">
+                            THE COLLECTION
+                        </div>
+
+                        <h2 class="display-heading">
+                            Four expressions.
+                            <em>One signature.</em>
+                        </h2>
+
+                    </div>
+
+                    <p class="collection-intro">
+                        Четыре интерпретации характера AURELIS —
+                        от первого знакомства до редких
+                        коллекционных выпусков.
+                    </p>
+
+                </div>
+
+
+                <div class="products-grid">
+
+                    <!-- PRODUCT -->
+                    <article
+                        class="product-card reveal"
+                        data-name="AURELIS VSOP"
+                        data-price="89"
+                        data-image="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&w=900&q=85"
+                    >
+
+                        <div class="product-top">
+
+                            <span>
+                                01
+                            </span>
+
+                            <span class="product-badge">
+                                SIGNATURE
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-visual">
+
+                            <div class="bottle-glow"></div>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&w=900&q=85"
+                                alt="AURELIS VSOP"
+                            >
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <div class="product-type">
+                                VSOP · 40% ABV
+                            </div>
+
+                            <h3>
+                                AURELIS
+                                <span>VSOP</span>
+                            </h3>
+
+                            <div class="product-specs">
+                                <span>
+                                    700 ML
+                                </span>
+
+                                <span>
+                                    OAK · VANILLA · SPICE
+                                </span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    €89
+                                </div>
+
+                                <button
+                                    class="add-button"
+                                    type="button"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT -->
+                    <article
+                        class="product-card reveal"
+                        data-name="AURELIS XO"
+                        data-price="165"
+                        data-image="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=85"
+                    >
+
+                        <div class="product-top">
+
+                            <span>
+                                02
+                            </span>
+
+                            <span class="product-badge">
+                                XO
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-visual">
+
+                            <div class="bottle-glow"></div>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=85"
+                                alt="AURELIS XO"
+                            >
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <div class="product-type">
+                                XO · 40% ABV
+                            </div>
+
+                            <h3>
+                                AURELIS
+                                <span>XO</span>
+                            </h3>
+
+                            <div class="product-specs">
+                                <span>
+                                    700 ML
+                                </span>
+
+                                <span>
+                                    FRUIT · COCOA · OAK
+                                </span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    €165
+                                </div>
+
+                                <button
+                                    class="add-button"
+                                    type="button"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT -->
+                    <article
+                        class="product-card reveal"
+                        data-name="AURELIS RÉSERVE"
+                        data-price="245"
+                        data-image="https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=900&q=85"
+                    >
+
+                        <div class="product-top">
+
+                            <span>
+                                03
+                            </span>
+
+                            <span class="product-badge">
+                                RESERVE
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-visual">
+
+                            <div class="bottle-glow"></div>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=900&q=85"
+                                alt="AURELIS Réserve"
+                            >
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <div class="product-type">
+                                RÉSERVE · 42% ABV
+                            </div>
+
+                            <h3>
+                                AURELIS
+                                <span>Réserve</span>
+                            </h3>
+
+                            <div class="product-specs">
+                                <span>
+                                    700 ML
+                                </span>
+
+                                <span>
+                                    WALNUT · FIG · TOBACCO
+                                </span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    €245
+                                </div>
+
+                                <button
+                                    class="add-button"
+                                    type="button"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PRODUCT -->
+                    <article
+                        class="product-card reveal"
+                        data-name="AURELIS ÉDITION NOIRE"
+                        data-price="390"
+                        data-image="https://images.unsplash.com/photo-1598301257982-0cf014dabbcd?auto=format&fit=crop&w=900&q=85"
+                    >
+
+                        <div class="product-top">
+
+                            <span>
+                                04
+                            </span>
+
+                            <span class="product-badge">
+                                LIMITED
+                            </span>
+
+                        </div>
+
+
+                        <div class="product-visual">
+
+                            <div class="bottle-glow"></div>
+
+                            <img
+                                src="https://images.unsplash.com/photo-1598301257982-0cf014dabbcd?auto=format&fit=crop&w=900&q=85"
+                                alt="AURELIS Édition Noire"
+                            >
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <div class="product-type">
+                                COLLECTION · 43% ABV
+                            </div>
+
+                            <h3>
+                                AURELIS
+                                <span>Noire</span>
+                            </h3>
+
+                            <div class="product-specs">
+                                <span>
+                                    700 ML
+                                </span>
+
+                                <span>
+                                    DARK FRUIT · LEATHER · SPICE
+                                </span>
+                            </div>
+
+                            <div class="product-bottom">
+
+                                <div class="product-price">
+                                    €390
+                                </div>
+
+                                <button
+                                    class="add-button"
+                                    type="button"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STORY -->
+        <section class="story-section">
+
+            <div class="story-image"></div>
+
+            <div class="story-content">
+
+                <div class="story-inner reveal">
+
+                    <div class="section-eyebrow">
+                        THE AURELIS METHOD
+                    </div>
+
+                    <blockquote>
+                        “Мы не пытаемся сделать напиток старым.
+                        Мы даём ему время
+                        <em>стать собой.</em>”
+                    </blockquote>
+
+                    <div class="quote-author">
+                        ANTOINE AURELIS · CELLAR MASTER
+                    </div>
+
+                    <p class="section-text">
+                        В основе философии AURELIS —
+                        выбор времени вместо скорости.
+                        Каждая партия проходит несколько этапов
+                        выдержки и последующей ассамбляжной работы.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PARTNERS -->
+        <section
+            class="section partners-section"
+            id="partners"
+        >
+
+            <div class="container">
+
+                <div class="partners-intro reveal">
+
+                    <div class="section-eyebrow">
+                        SELECTED PARTNERS
+                    </div>
+
+                    <h2 class="display-heading">
+                        Wherever people
+                        <em>value details.</em>
+                    </h2>
+
+                    <p class="section-text">
+                        AURELIS сотрудничает с private clubs,
+                        luxury hotels, гастрономическими проектами
+                        и пространствами, которые разделяют
+                        нашу философию.
+                    </p>
+
+                </div>
+
+
+                <div class="partners-grid">
+
+                    <div class="partner reveal">
+
+                        <span class="partner-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Maison Étoile
+                        </h3>
+
+                        <p>
+                            PARIS · HOSPITALITY
+                        </p>
+
+                    </div>
+
+
+                    <div class="partner reveal">
+
+                        <span class="partner-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Noir & Co.
+                        </h3>
+
+                        <p>
+                            LONDON · PRIVATE CLUB
+                        </p>
+
+                    </div>
+
+
+                    <div class="partner reveal">
+
+                        <span class="partner-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Atelier 92
+                        </h3>
+
+                        <p>
+                            MILAN · GASTRONOMY
+                        </p>
+
+                    </div>
+
+
+                    <div class="partner reveal">
+
+                        <span class="partner-number">
+                            04
+                        </span>
+
+                        <h3>
+                            The Aureum
+                        </h3>
+
+                        <p>
+                            GENEVA · HOSPITALITY
+                        </p>
+
+                    </div>
+
+
+                    <div class="partner reveal">
+
+                        <span class="partner-number">
+                            05
+                        </span>
+
+                        <h3>
+                            L'Étage
+                        </h3>
+
+                        <p>
+                            MONACO · DINING
+                        </p>
+
+                    </div>
+
+
+                    <div class="partner reveal">
+
+                        <span class="partner-number">
+                            06
+                        </span>
+
+                        <h3>
+                            Serein
+                        </h3>
+
+                        <p>
+                            TOKYO · PRIVATE DINING
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- JOURNAL -->
+        <section
+            class="section journal-section"
+            id="journal"
+        >
+
+            <div class="container">
+
+                <div class="journal-header reveal">
+
+                    <div>
+
+                        <div class="section-eyebrow">
+                            JOURNAL
+                        </div>
+
+                        <h2 class="display-heading">
+                            Notes from
+                            <em>the Maison.</em>
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="#"
+                        class="btn btn-outline"
+                    >
+                        Все статьи
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+
+                <div class="journal-grid">
+
+                    <article class="journal-card reveal">
+
+                        <div class="journal-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1473973266408-ed4e27abdd47?auto=format&fit=crop&w=1200&q=85"
+                                alt=""
+                            >
+
+                        </div>
+
+                        <div class="journal-meta">
+                            THE CELLAR
+                        </div>
+
+                        <h3>
+                            Что происходит с коньяком
+                            за десять лет в дубовой бочке
+                        </h3>
+
+                        <p>
+                            Небольшая история о времени,
+                            дереве и трансформации eaux-de-vie.
+                        </p>
+
+                        <span class="journal-date">
+                            18 SEPTEMBER 2026
+                        </span>
+
+                    </article>
+
+
+                    <article class="journal-card reveal">
+
+                        <div class="journal-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1200&q=85"
+                                alt=""
+                            >
+
+                        </div>
+
+                        <div class="journal-meta">
+                            MAISON
+                        </div>
+
+                        <h3>
+                            Внутри погребов AURELIS:
+                            126 лет традиции
+                        </h3>
+
+                        <p>
+                            Архивные записи, философия
+                            и история семейного дома.
+                        </p>
+
+                        <span class="journal-date">
+                            02 SEPTEMBER 2026
+                        </span>
+
+                    </article>
+
+
+                    <article class="journal-card reveal">
+
+                        <div class="journal-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=85"
+                                alt=""
+                            >
+
+                        </div>
+
+                        <div class="journal-meta">
+                            EVENTS
+                        </div>
+
+                        <h3>
+                            AURELIS Private Evening —
+                            Paris 2026
+                        </h3>
+
+                        <p>
+                            Закрытый вечер дома AURELIS
+                            для партнёров и коллекционеров.
+                        </p>
+
+                        <span class="journal-date">
+                            26 AUGUST 2026
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESPONSIBILITY -->
+        <section class="responsibility-section">
+
+            <div class="container responsibility-grid">
+
+                <div class="responsibility-heading reveal">
+
+                    Enjoy the moment.<br>
+
+                    <em>
+                        Respect the limit.
+                    </em>
+
+                </div>
+
+
+                <div class="responsibility-text reveal">
+
+                    <strong>
+                        RESPONSIBLE DRINKING
+                    </strong>
+
+                    <p>
+                        AURELIS поддерживает ответственное
+                        отношение к алкоголю.
+                    </p>
+
+                    <p>
+                        Чрезмерное употребление алкоголя
+                        вредит здоровью.
+                    </p>
+
+                    <p>
+                        Алкоголь не предназначен для
+                        несовершеннолетних, беременных женщин,
+                        водителей и людей, которым употребление
+                        алкоголя противопоказано.
+                    </p>
+
+                    <p>
+                        Пожалуйста, соблюдайте законодательство
+                        вашей страны и употребляйте алкоголь
+                        ответственно.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+
+                    <div class="footer-logo">
+                        AURELIS
+                    </div>
+
+                    <p>
+                        Maison de Cognac.<br>
+                        Since 1898.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <div class="footer-heading">
+                        EXPLORE
+                    </div>
+
+                    <a href="#maison">
+                        Maison
+                    </a>
+
+                    <a href="#heritage">
+                        Heritage
+                    </a>
+
+                    <a href="#collection">
+                        Collection
+                    </a>
+
+                    <a href="#journal">
+                        Journal
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <div class="footer-heading">
+                        CONTACT
+                    </div>
+
+                    <a href="mailto:hello@aurelis-maison.example">
+                        hello@aurelis-maison.example
+                    </a>
+
+                    <a href="#">
+                        Cognac, France
+                    </a>
+
+                    <a href="#">
+                        +33 5 00 00 00 00
+                    </a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <div class="footer-heading">
+                        SOCIAL
+                    </div>
+
+                    <a href="#">
+                        Telegram
+                    </a>
+
+                    <a href="#">
+                        Pinterest
+                    </a>
+
+                    <a href="#">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+    <span>
+        © 2026 AURELIS MAISON DE COGNAC
+    </span>
+
+    <a
+        href="#"
+        class="studio-credit"
+        aria-label="Beloff Studio"
+    >
+        <span>
+            DESIGNED & DEVELOPED BY
+        </span>
+
+        <strong>
+            Beloff Studio
+        </strong>
+    </a>
+
+    <span>
+        FICTIONAL PORTFOLIO CONCEPT
+    </span>
+
+    <span>
+        DRINK RESPONSIBLY
+    </span>
+
+</div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- CART OVERLAY -->
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+    ></div>
+
+
+    <!-- CART DRAWER -->
+    <aside
+        class="cart-drawer"
+        id="cartDrawer"
+    >
+
+        <div class="cart-header">
+
+            <div>
+
+                <div class="section-eyebrow">
+                    YOUR SELECTION
+                </div>
+
+                <h2>
+                    Collection
+                </h2>
+
+            </div>
+
+            <button
+                class="cart-close"
+                id="cartClose"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cartItems"
+        >
+
+            <div class="cart-empty">
+                Ваша коллекция пока пуста.
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>
+                    TOTAL
+                </span>
+
+                <strong id="cartTotal">
+                    €0
+                </strong>
+
+            </div>
+
+            <button
+                class="btn btn-gold cart-checkout"
+                id="checkoutButton"
+            >
+                Запросить коллекцию
+                <span>→</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- TOAST -->
+    <div
+        class="toast"
+        id="toast"
+    ></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
